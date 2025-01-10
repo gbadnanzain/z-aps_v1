@@ -13,3 +13,4 @@ php artisan filament:install --panels
 php artisan storage:link
 chmod -R 775 storage
 chmod -R 775 bootstrap/cache
+# z-aps_v1
