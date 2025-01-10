@@ -52,7 +52,7 @@ class TransactionalDataResource extends Resource
                                 Forms\Components\TextInput::make('ID')
                                     ->columnSpan(1)
                                     ->label('ID')
-                                    ->searchable()
+
                                     ->disabled()
                                     ->unique(ignoreRecord: true),
                                 Forms\Components\TextInput::make('SO_No')
@@ -95,7 +95,7 @@ class TransactionalDataResource extends Resource
                                     ->extraAttributes(['class' => 'w-auto']),
                                 Forms\Components\Select::make('SO_Status')
                                     ->label('Status')
-                                    ->sortable()
+
                                     ->required()
                                     ->columnSpan(2)
                                     ->options([

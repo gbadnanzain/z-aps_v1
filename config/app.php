@@ -1,5 +1,8 @@
 <?php
 
+use BezhanSalleh\FilamentShield\FilamentShield;
+use BezhanSalleh\FilamentShield\FilamentShieldServiceProvider;
+
 return [
 
     /*
@@ -117,7 +120,11 @@ return [
     | Supported drivers: "file", "cache"
     |
     */
-
+    'providers' => [
+        // Penyedia layanan lainnya
+        //Filament\Shield\FilamentShieldServiceProvider::class,
+        FilamentShieldServiceProvider::class,
+    ],
     'maintenance' => [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
